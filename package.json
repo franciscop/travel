@@ -1,0 +1,12 @@
+{
+  "name": "travel",
+  "version": "0.2.0",
+  "description": "",
+  "main": "index.min.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
+  "license": "MIT"
+}
