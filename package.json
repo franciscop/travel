@@ -4,9 +4,22 @@
   "description": "",
   "main": "index.min.js",
   "scripts": {
-    "test": "jest --coverage"
+    "start": "npm run watch # Start ~= Start dev",
+    "build": "rollup index.mjs --name fch --output.format umd | uglifyjs -o index.min.js",
+    "demo": "node --experimental-modules demo.mjs",
+    "test": "jest --coverage --detectOpenHandles",
+    "watch": "nodemon --exec \"npm run build && npm test && npm run gzip\" --watch src --watch test --watch webpack.config.js --watch package.json",
+    "gzip": "gzip -c index.min.js | wc -c && echo 'bytes' # Only for Unix"
   },
   "keywords": [],
   "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
-  "license": "MIT"
+  "license": "MIT",
+  "sideEffects": false,
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^23.5.0",
+    "uglify-es": "^3.3.9"
+  }
 }
