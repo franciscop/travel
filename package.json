@@ -1,6 +1,6 @@
 {
   "name": "travel",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Javascript-based CRUD ORM for varied sources",
   "homepage": "https://github.com/franciscop/travel#readme",
   "repository": "https://github.com/franciscop/travel.git",
