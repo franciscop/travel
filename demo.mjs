@@ -5,10 +5,10 @@
 // $ npm run demo -- driver=memory   # note: default
 import db from './index.mjs';
 
-import memory from './memory';
-import mongo from './mongo';
-import sql from './sql';
-import api from './api';
+import memory from './memory/index.mjs';
+import mongo from './mongo/index.mjs';
+import sql from './sql/index.mjs';
+import api from './api/index.mjs';
 
 // Pick up the correct driver from the CLI
 const drivers = { memory, mongo, sql, api };

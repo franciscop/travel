@@ -1,4 +1,4 @@
-import memory from './memory';
+import memory from './memory/index.mjs';
 
 const entry = ({ base, table, filter, one }) => {
   // Number and Strings will be set as "id=FILTER"
