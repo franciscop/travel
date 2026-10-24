@@ -5,10 +5,6 @@ const entry = ({ base, table, filter, one }) => {
   if (typeof filter !== 'object') {
     filter = { id: filter };
   }
-  const extractOne = res => {
-    console.log(res);
-    return one ? res[0] : res;
-  };
   return new Proxy({}, {
     get: (obj, prop) => {
       if (prop === 'then') {

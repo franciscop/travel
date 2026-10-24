@@ -1,4 +1,4 @@
-# Travel
+# Travel [![npm install travel](https://img.shields.io/badge/npm%20install-travel-blue.svg)](https://www.npmjs.com/package/travel) [![tests](https://github.com/franciscop/travel/workflows/tests/badge.svg)](https://github.com/franciscop/travel/actions) [![deps](https://img.shields.io/badge/deps-0-limegreen.svg)](https://github.com/franciscop/travel/blob/master/package.json)
 
 Create and manage your Javascript data at hyperspeed:
 

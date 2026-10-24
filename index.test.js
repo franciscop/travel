@@ -1,5 +1,5 @@
 // import test from './index';
-const travel = require('./index.mjs');
+const travel = require('./relationships.js');
 
 const data = travel(`
   users.*.friends.* => users,

@@ -24,7 +24,7 @@ const sql = function (str, values) {
 sql.create = async ({ table, data }) => {
   const keys = Object.keys(data);
   const values = Object.values(data);
-  await sql(`INSERT ${table} (${keys}) VALUES (${keys.map(k => '?')})`, values);
+  await sql(`INSERT ${table} (${keys}) VALUES (${keys.map(() => '?')})`, values);
   return;
 };
 
