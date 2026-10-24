@@ -1,6 +1,6 @@
 {
   "name": "travel",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Javascript-based CRUD ORM for varied sources",
   "repository": "github:franciscop/travel",
   "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
